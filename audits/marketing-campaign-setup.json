@@ -1,0 +1,51 @@
+{
+  "skill": "marketing-campaign-setup",
+  "auditedAt": "2026-11-15",
+  "auditor": "ak:skill-creator audit",
+  "skillMdSha256": "612f367af41a04a31a4762a8ed48a5e95bafd736ca0510ad97bce3d0859cf848",
+  "result": "pass",
+  "checks": [
+    {
+      "id": "structure",
+      "name": "Structure and frontmatter",
+      "result": "pass",
+      "detail": "quick_validate.py: valid name, description and layout. skill_standard_report.py: 0 warnings."
+    },
+    {
+      "id": "prompt-lint",
+      "name": "Prompt lint and routing",
+      "result": "pass",
+      "detail": "lint_cruft.py --routing: 0 high, 0 medium, 0 low findings. Blind routing test: 16 of 16 requests routed as expected against adjacent skills."
+    },
+    {
+      "id": "executable-code",
+      "name": "Executable code",
+      "result": "pass",
+      "detail": "No scripts, binaries or install hooks. Markdown instructions and templates only."
+    },
+    {
+      "id": "secrets",
+      "name": "Secrets and private data",
+      "result": "pass",
+      "detail": "No tokens, keys, private paths or personal data. Examples use placeholders (jane, acme, example.com)."
+    },
+    {
+      "id": "network",
+      "name": "Network and data exfiltration",
+      "result": "pass",
+      "detail": "Reads marketing/ files and writes one Markdown brief per campaign. No network access. Only example.com placeholders in UTM examples."
+    },
+    {
+      "id": "instruction-safety",
+      "name": "Instruction safety",
+      "result": "pass",
+      "detail": "No instruction overrides or hidden characters. Requires real numbers with source and date, user approval before files are marked final, and never publishes on the user's behalf."
+    },
+    {
+      "id": "dependencies",
+      "name": "Dependencies",
+      "result": "pass",
+      "detail": "None."
+    }
+  ]
+}

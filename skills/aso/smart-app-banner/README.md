@@ -5,20 +5,20 @@ Makes Safari on iPhone and iPad show Apple's native Smart App Banner on the page
 ## Install
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --skill smart-app-banner
+npx skills add https://github.com/kreddevils18/marketing-skills --skill smart-app-banner
 ```
 
 Or paste this prompt into any agent. It loads the skill for the task without installing it:
 
 ```text
-Run `npx skills use "https://github.com/kreddevils18/skills" --skill "smart-app-banner"` and follow the generated skill instructions now. Read its complete output, redirecting it to a temporary file first if necessary. Resolve relative paths from the supporting-files directory it provides.
+Run `npx skills use "https://github.com/kreddevils18/marketing-skills" --skill "smart-app-banner"` and follow the generated skill instructions now. Read its complete output, redirecting it to a temporary file first if necessary. Resolve relative paths from the supporting-files directory it provides.
 ```
 
 Manual install for Claude Code:
 
 ```sh
-git clone https://github.com/kreddevils18/skills
-cp -R skills/skills/smart-app-banner ~/.claude/skills/
+git clone https://github.com/kreddevils18/marketing-skills
+cp -R marketing-skills/skills/aso/smart-app-banner ~/.claude/skills/
 ```
 
 ## Use
@@ -41,4 +41,4 @@ Not covered: handling the URL inside the iOS app, Android install banners, custo
 
 ## Security audit
 
-Passed 7 of 7 checks on 2026-10-14 (`ak:skill-creator` audit): no scripts, no secrets, no network calls, no dependencies. See [`audits/smart-app-banner.json`](../../audits/smart-app-banner.json).
+Passed 7 of 7 checks on 2026-10-14 (`ak:skill-creator` audit): no scripts, no secrets, no network calls, no dependencies. See [`audits/smart-app-banner.json`](../../../audits/smart-app-banner.json).
