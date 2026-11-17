@@ -16,31 +16,31 @@ Browse them with install commands and the full instructions at [kien-hoang.verce
 With the [skills CLI](https://github.com/vercel-labs/skills), install one skill:
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --skill smart-app-banner
+npx skills add https://github.com/kreddevils18/marketing-skills --skill smart-app-banner
 ```
 
 Or every skill in this repository:
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills
+npx skills add https://github.com/kreddevils18/marketing-skills
 ```
 
 The CLI asks which agents to install for. To skip the questions, name the agents and install for every project (`-g`):
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --skill smart-app-banner -g -a claude-code -a codex
+npx skills add https://github.com/kreddevils18/marketing-skills --skill smart-app-banner -g -a claude-code -a codex
 ```
 
 List the skills without installing anything:
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --list
+npx skills add https://github.com/kreddevils18/marketing-skills --list
 ```
 
 ### Copy it yourself
 
 ```sh
-git clone https://github.com/kreddevils18/skills
+git clone https://github.com/kreddevils18/marketing-skills
 cp -R skills/skills/smart-app-banner ~/.claude/skills/
 ```
 

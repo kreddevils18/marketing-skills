@@ -5,19 +5,19 @@ Adds a "Prefer us on Google" button to your website so readers can pick it as a 
 ## Install
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --skill google-preferred-source
+npx skills add https://github.com/kreddevils18/marketing-skills --skill google-preferred-source
 ```
 
 Or paste this prompt into any agent. It loads the skill for the task without installing it:
 
 ```text
-Run `npx skills use "https://github.com/kreddevils18/skills" --skill "google-preferred-source"` and follow the generated skill instructions now. Read its complete output, redirecting it to a temporary file first if necessary. Resolve relative paths from the supporting-files directory it provides.
+Run `npx skills use "https://github.com/kreddevils18/marketing-skills" --skill "google-preferred-source"` and follow the generated skill instructions now. Read its complete output, redirecting it to a temporary file first if necessary. Resolve relative paths from the supporting-files directory it provides.
 ```
 
 Manual install for Claude Code:
 
 ```sh
-git clone https://github.com/kreddevils18/skills
+git clone https://github.com/kreddevils18/marketing-skills
 cp -R skills/skills/google-preferred-source ~/.claude/skills/
 ```
 
