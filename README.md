@@ -9,37 +9,38 @@ Browse them with install commands and the full instructions at [kien-hoang.verce
 | Skill | What it does |
 | --- | --- |
 | [smart-app-banner](skills/smart-app-banner) | Adds, fixes or checks Apple's Smart App Banner (`apple-itunes-app` meta tag) so a website promotes its iOS app in Safari. |
+| [google-preferred-source](skills/google-preferred-source) | Adds a Google "Preferred source" button as a no-JavaScript deeplink in the site's own component, so readers can pick the site in Top Stories, AI Mode and AI Overviews. |
 
 ## Install
 
 With the [skills CLI](https://github.com/vercel-labs/skills), install one skill:
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --skill smart-app-banner
+npx skills add https://github.com/kreddevils18/marketing-skills --skill smart-app-banner
 ```
 
 Or every skill in this repository:
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills
+npx skills add https://github.com/kreddevils18/marketing-skills
 ```
 
 The CLI asks which agents to install for. To skip the questions, name the agents and install for every project (`-g`):
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --skill smart-app-banner -g -a claude-code -a codex
+npx skills add https://github.com/kreddevils18/marketing-skills --skill smart-app-banner -g -a claude-code -a codex
 ```
 
 List the skills without installing anything:
 
 ```sh
-npx skills add https://github.com/kreddevils18/skills --list
+npx skills add https://github.com/kreddevils18/marketing-skills --list
 ```
 
 ### Copy it yourself
 
 ```sh
-git clone https://github.com/kreddevils18/skills
+git clone https://github.com/kreddevils18/marketing-skills
 cp -R skills/skills/smart-app-banner ~/.claude/skills/
 ```
 
@@ -60,6 +61,7 @@ Results live in [`audits/`](audits), one JSON file per skill. Each records the S
 | Skill | Result | Audited |
 | --- | --- | --- |
 | smart-app-banner | Pass, 7 of 7 checks | 2026-10-14 |
+| google-preferred-source | Pass, 7 of 7 checks | 2026-11-17 |
 
 ## Layout
 
@@ -68,6 +70,7 @@ skills/
   <skill-name>/
     SKILL.md     instructions the agent loads
     README.md    what the skill does and how to install it
+    references/  optional detail the agent loads when SKILL.md points to it
 audits/
   <skill-name>.json   latest security audit
 ```
