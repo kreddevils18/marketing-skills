@@ -2,14 +2,14 @@
   "skill": "google-preferred-source",
   "auditedAt": "2026-11-17",
   "auditor": "ak:skill-creator audit",
-  "skillMdSha256": "841fd8f9f8a0b3a181e2a9bb7989c8c18b73b186fd999b0f412e72753696206a",
+  "skillMdSha256": "a4c812ab98521ca21d2cc654c1decff075def5a890adfce31b8f859148954416",
   "result": "pass",
   "checks": [
     {
       "id": "structure",
       "name": "Structure and frontmatter",
       "result": "pass",
-      "detail": "quick_validate.py: valid name, description and layout. Two reference files under references/."
+      "detail": "quick_validate.py: valid name, description and layout. skill_standard_report.py: 0 errors, 0 warnings. package_skill.py: ZIP of SKILL.md, README.md and two references; the extracted copy validates. No symlinks."
     },
     {
       "id": "prompt-lint",

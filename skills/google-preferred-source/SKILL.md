@@ -1,6 +1,11 @@
 ---
 name: google-preferred-source
 description: Add a Google "Preferred source" button to a website with a plain no-JavaScript deeplink rendered by the site's own component, so readers can pick the site as a preferred source in Google Search (Top Stories, AI Mode, AI Overviews). Use when the user asks for a Google preferred source button or badge, "add us on Google", or wants more presence for their site in Top Stories or AI Overviews. Not for Google's publisher.js button, Google News publisher setup, or ranking work.
+license: MIT
+metadata:
+  author: Kien Hoang
+  version: 1.0.0
+  category: seo
 ---
 
 # Google Preferred Source
@@ -8,6 +13,10 @@ description: Add a Google "Preferred source" button to a website with a plain no
 Add a "Prefer us on Google" button that links readers to Google's source
 preferences tool for the site's host. The button is a plain link rendered by the
 site's own component: no Google script, no request to Google on page load.
+
+Scope: the button, its placement, its test and its verification in the user's
+own repository. Hand off Search Console changes, Google News publisher setup and
+ranking or content work; this skill changes no Google account settings.
 
 ## What it does
 
@@ -73,6 +82,15 @@ only if the user wants them (ZIP link in the facts reference).
 
 - Check the button at 375px width and in both themes; tab to it and see the
   focus ring.
+
+## Done when
+
+- The URL is defined once from the canonical host, and one component renders it.
+- The component is placed where the user agreed, and the focused test passes
+  along with the repo's lint and type checks.
+- The server HTML contains the deeplink and no `publisher.js`, and the 375px,
+  theme and focus checks were done, or each one is reported as not checked.
+- The manual checks below are handed to the user as pending.
 
 ## Manual checks for the site owner
 
