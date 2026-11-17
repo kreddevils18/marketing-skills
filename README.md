@@ -9,6 +9,7 @@ Browse them with install commands and the full instructions at [kien-hoang.verce
 | Skill | What it does |
 | --- | --- |
 | [smart-app-banner](skills/smart-app-banner) | Adds, fixes or checks Apple's Smart App Banner (`apple-itunes-app` meta tag) so a website promotes its iOS app in Safari. |
+| [google-preferred-source](skills/google-preferred-source) | Adds a Google "Preferred source" button as a no-JavaScript deeplink in the site's own component, so readers can pick the site in Top Stories, AI Mode and AI Overviews. |
 
 ## Install
 
@@ -60,6 +61,7 @@ Results live in [`audits/`](audits), one JSON file per skill. Each records the S
 | Skill | Result | Audited |
 | --- | --- | --- |
 | smart-app-banner | Pass, 7 of 7 checks | 2026-10-14 |
+| google-preferred-source | Pass, 7 of 7 checks | 2026-11-17 |
 
 ## Layout
 
@@ -68,6 +70,7 @@ skills/
   <skill-name>/
     SKILL.md     instructions the agent loads
     README.md    what the skill does and how to install it
+    references/  optional detail the agent loads when SKILL.md points to it
 audits/
   <skill-name>.json   latest security audit
 ```

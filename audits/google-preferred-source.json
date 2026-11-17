@@ -1,0 +1,51 @@
+{
+  "skill": "google-preferred-source",
+  "auditedAt": "2026-11-17",
+  "auditor": "ak:skill-creator audit",
+  "skillMdSha256": "841fd8f9f8a0b3a181e2a9bb7989c8c18b73b186fd999b0f412e72753696206a",
+  "result": "pass",
+  "checks": [
+    {
+      "id": "structure",
+      "name": "Structure and frontmatter",
+      "result": "pass",
+      "detail": "quick_validate.py: valid name, description and layout. Two reference files under references/."
+    },
+    {
+      "id": "prompt-lint",
+      "name": "Prompt lint and routing",
+      "result": "pass",
+      "detail": "lint_cruft.py --routing: 0 high, 0 medium, 0 low findings across 4 files."
+    },
+    {
+      "id": "executable-code",
+      "name": "Executable code",
+      "result": "pass",
+      "detail": "No scripts, binaries or install hooks. Code blocks are examples for the user's own project. The only commands are read-only curl checks of the user's own page."
+    },
+    {
+      "id": "secrets",
+      "name": "Secrets and private data",
+      "result": "pass",
+      "detail": "No tokens, keys, private paths or personal data. Examples use the example.com placeholder."
+    },
+    {
+      "id": "network",
+      "name": "Network and data exfiltration",
+      "result": "pass",
+      "detail": "Sends no data anywhere. Links are Google's public docs, the source preferences tool, the optional official badge ZIP, and example.com placeholders. The skill tells the agent not to load Google's script."
+    },
+    {
+      "id": "instruction-safety",
+      "name": "Instruction safety",
+      "result": "pass",
+      "detail": "No instruction overrides or hidden characters. Tells the agent to ask for the host instead of guessing and to report owner-only checks as pending."
+    },
+    {
+      "id": "dependencies",
+      "name": "Dependencies",
+      "result": "pass",
+      "detail": "None."
+    }
+  ]
+}
